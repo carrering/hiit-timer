@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import Timer from '../components/timer'
 
 export default function Home() {
   return (
@@ -22,14 +24,13 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Timer &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <Timer/>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <Link href="./settings" className={styles.card}>
             <h2>Settings &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <p>change settings here</p>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"

@@ -1,0 +1,7 @@
+.container {
+    background-color: darkslategrey;
+}
+
+.title1 {
+    color: var(--text-green);
+  }
